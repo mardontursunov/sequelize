@@ -1,16 +1,8 @@
 const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 3000
-
 const app = express()
-
-
-const { Sequelize } = require('sequelize')
-
-const sequelize = new Sequelize('sequelize', 'postgres', 'mardon', {
-    host: 'localhost',
-    dialect: 'postgres'
-});
+const sequelize = require('./config/database')
 
 sequelize.authenticate()
     .then(() => console.log("Database has connected successfuly!"))
