@@ -1,8 +1,8 @@
 const { Sequelize } = require('sequelize')
 
-const sequelize = new Sequelize('sequelize', 'postgres', 'mardon', {
+const db = new Sequelize('sequelize', 'postgres', 'mardon', {
     host: 'localhost',
     dialect: 'postgres'
 });
 
-module.exports = sequelize
+module.exports = db
