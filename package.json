@@ -1,0 +1,23 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "first project with sequelize ORM",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": [
+    "sequelize",
+    "database",
+    "postgres"
+  ],
+  "author": "Mardon Tursunov",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5"
+  }
+}
